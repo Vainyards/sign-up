@@ -17,9 +17,22 @@ body {
     padding: 20px;
     background-image: url("https://picsum.photos/600");
     text-align: right;
+    background-size: cover;
 }
 .logo {
     background-image: url("odin-lined.png")
+    flex: 4.5;
+}
+@font-face {
+    font-family: Norse;
+    src: url(./Norse-Bold.otf);
+  }
+.logo-text {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-family: Norse, Arial;
 }
 
 #right-container {
@@ -41,6 +54,8 @@ body {
     
 }
 
+
+
 .bottom {
     padding-top: 5rem;
 }
@@ -58,6 +73,7 @@ input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+       
 }
 .overlay-container {
     display: flex;
@@ -68,7 +84,9 @@ input {
 .overlay {
    height: 200px;
    display: flex;
-   
+   background: rgba(110, 110, 110, 0.404);
+   align-items: center;
+   justify-content: center;
 
    /*
    top: 50%;
@@ -76,3 +94,9 @@ input {
    transform: translate(-50%, -50%);
     */
 }
+#button {
+    background-color: green;
+    border-radius: 6px;
+    
+}
+
